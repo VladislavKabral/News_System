@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>News System</title>
+	<link rel="stylesheet" type="text/css" th:href="@{/styles/home.css}">
+</head>
+<body>
+
+	<div class="header">
+		<h1>News management</h1>
+		<div class="languages">
+			<a>English</a>
+			<a>Russian</a>
+		</div>
+		<hr>
+	</div>
+
+	<div class="pageNavigation">
+		<div class="title">
+			<h3>News</h3>
+		</div>
+		<div class="pageLinks">
+			<div class="link">
+				<div class="circle">
+					<div class="smallCircle"></div>
+				</div>
+				<a href="/home">News list</a>
+			</div>
+
+			<div class="link">
+				<div class="circle">
+					<div class="smallCircle"></div>
+				</div>
+				<a href="/addNews">Add news</a>
+			</div>
+
+		</div>
+	</div>
+
+	<div class="news">
+		<h4>News  >> </h4>
+		<h3>News list</h3>
+
+		<div class="new">
+			<div class="title">
+				<h2>New title</h2>
+			</div>
+
+			<div class="date">
+				<h2>23.06.2022</h2>
+			</div>
+
+			<div class="data">
+				<textarea readonly> Some text</textarea>
+			</div>
+
+			<div class="view">
+				<a href="">view</a>
+			</div>
+
+			<div class="edit"> 
+				<a href="">edit</a>
+			</div>
+
+			<div class="check">
+				<input type="checkBox" name="deleteCheck">
+			</div>
+		</div>
+
+		<div class="delete">
+			<input type="button" name="deleteCheck" value="DELETE">
+		</div>
+
+	</div>
+
+
+</body>
+
+</html>

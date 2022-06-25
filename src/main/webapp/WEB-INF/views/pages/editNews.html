@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Edit news</title>
+	<link rel="stylesheet" type="text/css" th:href="@{/styles/editNews.css}">
+</head>
+
+<body>
+
+	<div class="header">
+		<h1>News management</h1>
+		<div class="languages">
+			<a href="">English</a>
+			<a href="">Russian</a>
+		</div>
+		<hr>
+	</div>
+
+	<div class="pageNavigation">
+		<div class="title">
+			<h3>News</h3>
+		</div>
+		<div class="pageLinks">
+			<div class="link">
+				<div class="circle">
+					<div class="smallCircle"></div>
+				</div>
+				<a href="/home">News list</a>
+			</div>
+
+			<div class="link">
+				<div class="circle">
+					<div class="smallCircle"></div>
+				</div>
+				<a href="/addNews">Add news</a>
+			</div>
+
+		</div>
+	</div>
+
+	<div class="new">
+		<h4>News  >> </h4>
+		<h3>Edit news</h3>
+
+		<div class="title">
+			<h3>News Title</h3>
+			<input type="text" name="titleInput">
+		</div>
+
+		<div class="date">
+			<h3>News Date</h3>
+			<input type="date" name="dateInput">
+		</div>
+
+		<div class="brief">
+			<h3>Brief</h3>
+			<textarea>Some brief</textarea>
+		</div>
+
+		<div class="content">
+			<h3>Content</h3>
+			<textarea>Some content</textarea>
+		</div>
+
+		<div class="add">
+			<input type="button" name="saveButton" value="SAVE">	
+		</div>
+
+		<div class="cancel">
+			<input type="button" name="cancelButton" value="CANCEL">
+		</div>
+	</div>
+
+</body>
+
+</html>
